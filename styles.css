@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+:root{--text:#1d1d1f;--muted:#666;--maroon:#6b1733;--maroon-dark:#451020;--cream:#f6f1eb;--border:#ddd7d0}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}
+a{color:var(--maroon)}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.narrow{width:min(760px,100%);margin:auto}
+.site-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:24px}
+.brand{font-weight:800;text-decoration:none;color:var(--maroon-dark);font-size:1.2rem}
+nav{display:flex;gap:24px;flex-wrap:wrap}nav a{text-decoration:none;color:#333;font-weight:600}nav a:hover,nav a.active{color:var(--maroon)}
+.hero{min-height:560px;display:grid;align-items:center;background:linear-gradient(120deg,#2d0b17,#6b1733);color:#fff}
+.hero-content{padding:80px 0}.hero h1,.page-hero h1{font-size:clamp(2.6rem,7vw,5.5rem);line-height:1.02;margin:.2em 0}.hero .lead{max-width:740px;font-size:1.25rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-weight:800;font-size:.78rem}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:700}
+.btn.primary{background:#fff;color:var(--maroon-dark)}.btn.secondary{border:1px solid rgba(255,255,255,.7);color:#fff}
+.section{padding:72px 0}.section.alt{background:var(--cream)}.section h2{font-size:2rem;line-height:1.2;color:var(--maroon-dark)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:28px}.card h3{margin-top:0;color:var(--maroon-dark)}
+.page-hero{padding:72px 0;background:var(--cream);border-bottom:1px solid var(--border)}
+.notice{margin:32px 0;padding:22px;border-left:5px solid var(--maroon);background:var(--cream)}
+footer{background:#1f1519;color:#f3eeee;padding:42px 0}footer a{color:#fff}.footer-inner p{margin:.35rem 0}.small{font-size:.9rem;color:#cfc7ca}
+@media (max-width:760px){.nav-wrap{align-items:flex-start;flex-direction:column;padding:16px 0}.cards{grid-template-columns:1fr}}
