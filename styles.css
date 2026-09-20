@@ -28,3 +28,38 @@ nav{display:flex;gap:24px;flex-wrap:wrap}nav a{text-decoration:none;color:#333;f
 .notice{margin:32px 0;padding:22px;border-left:5px solid var(--maroon);background:var(--cream)}
 footer{background:#1f1519;color:#f3eeee;padding:42px 0}footer a{color:#fff}.footer-inner p{margin:.35rem 0}.small{font-size:.9rem;color:#cfc7ca}
 @media (max-width:760px){.nav-wrap{align-items:flex-start;flex-direction:column;padding:16px 0}.cards{grid-template-columns:1fr}}
+.theater-section {
+  padding: 72px 0;
+  background: #fff;
+}
+
+.theater-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.theater-image img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.theater-text h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: var(--maroon-dark);
+}
+
+.theater-text p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 760px) {
+  .theater-grid {
+    grid-template-columns: 1fr;
+  }
+}
